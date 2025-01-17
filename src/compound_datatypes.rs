@@ -34,6 +34,12 @@ pub fn arrays() {
     // Strings are growable, mutable, owned string types
     // String slices are immutable, borrowed string types
 
-    let secret_agent : String = String::from("DarkMode, ");
+    let mut secret_agent : String = String::from("DarkMode ");
+    secret_agent.push_str("Activated");
     print!("What is our secret: {}", secret_agent);
+
+    // String Slice -&str (the & sign makes a reference)
+    let value: String = String::from ("Get Dirty");
+    let value_slice: &str = &value[0..3];
+    print!("The Value Slice:{}", value_slice);
 }
