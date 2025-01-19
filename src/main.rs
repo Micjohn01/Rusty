@@ -1,3 +1,5 @@
+use functions::my_id;
+
 mod primitive_datatypes;
 mod compound_datatypes;
 mod functions;
@@ -11,4 +13,5 @@ fn main() {
 
     compound_datatypes::arrays();
     functions::tell_height(184);
+    my_id("Michael", 20, 184.0);
 }
