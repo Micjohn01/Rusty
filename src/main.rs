@@ -31,6 +31,12 @@ fn main() {
     // println!("{}", s2);
     let len = calculate_length(&s1);
     println!("Length of '{}' is {}.", s1, len);
+
+    // let mut _x:i32 = 5;
+    // let _r: i32 = & mut _x;
+    // *_r += 1;
+    // println!("Value of _x is: {}", _x);
+    
 }
 
 pub fn calculate_length(s: &String) -> usize {
