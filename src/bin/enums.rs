@@ -13,14 +13,17 @@ route(IpAddrKind::V4);
 route(IpAddrKind::V6);
 
 enum IpAddr {
-    V4(String),
+    V4(u8, u8, u8, u8),
     V6(String),
 }
 
 // Using Enums
-let _home: IpAddr = IpAddr::V4(String::from("127.0.0.1"));
-let _loopback: IpAddr = IpAddr::V6(String::from("::1"));
+// let _home: IpAddr = IpAddr::V4(String::from("127.0.0.1"));
+// let _loopback: IpAddr = IpAddr::V6(String::from("::1"));
 
+// Enhance Enums
+let _home: IpAddr = IpAddr::V4(127,0,0,1);
+let _loopback: IpAddr = IpAddr::V6(String::from("::1"));
 
 // Using Structs
 
