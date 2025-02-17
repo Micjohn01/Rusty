@@ -34,3 +34,19 @@ mod test {
         assert_eq!(p.degree(), 2);
     }
 }
+
+// fn evaluate(&mut self) {
+//     for layer_idx in 1..self.layers.len() {
+//         let prev_layer = &self.layers[layer_idx - 1].gates;
+//         let current_layer  = &mut self.layers[layer_idx].gates;
+
+//         for gate in current_layer.iter_mut() {
+//             let inputs: Vec<u64> = gate.inputs.iter().map(|id| prev_layer[id.0].value.unwrap()).collect();
+
+//             gate.value = Some(match gate.operator{
+//                 Operation::Add => inputs.iter().sum(),
+//                 Operation::Mul => inputs.iter().product(),
+//             });
+//         }
+//     }
+// }
